@@ -38,12 +38,18 @@ class ViewController: UIViewController {
 
     @IBAction func redSliderAction(_ sender: Any) {
         redNumber.text = String(Int(redSlider.value))
+        
+        paletteView.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1)
     }
     @IBAction func greenSliderAction(_ sender: Any) {
         greenNumber.text = String(Int(greenSlider.value))
+        
+        paletteView.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1)
     }
     @IBAction func blueSliderAction(_ sender: Any) {
         blueNumber.text = String(Int(blueSlider.value))
+        
+        paletteView.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1)
     }
     
 }
