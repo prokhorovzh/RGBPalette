@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! ViewController
         vc.delegate = self
+        vc.colorBackground = view.backgroundColor
     }
     
 }
